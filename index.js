@@ -48,12 +48,14 @@ function viewCart() {
 }
 
 function total() {
-  tote = []
+  var tote = []
 
   for (let i = 0; i < cart.length; i++) {
-    tote.push(cart[i])
+    for (let item in cart[i]) {
+      tote.push(cart[i][item])
+    }
   }
-  return cart[i][item];
+  return tote;
 }
 
 function removeFromCart(item) {
