@@ -50,7 +50,7 @@ function viewCart() {
 function total() {
   var amount = 0;
 
-  for (let i = 0; l = cart.length; i < l; i++) {
+  for (let i = 0; l = cart.length; i++) {
     for (let item in cart[i]) {
       amount += cart[i][item];
     }
