@@ -31,26 +31,25 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
   } else {
-      var price = [];
+      var items = [];
 
-      for (i in cart) {
-
-        var price = cart[i];
-
-        for (var j in price) {
-
-          price.push(j + "at $" + price[j]);
+      for (let i = 0; i < cart.length; i++) {
+        for (let item in cart[i]) {
+          items.push(item + " at $" + cart[i][item])
         }
-      }
-    var vCart = price.join(", ");
-    console.log("In your cart, you have" + vCart + ".");
+      } 
+    console.log("In your cart, you have " + items.join(", ") + ".");
   }
 }
 
 function total() {
-  var t= 0
+  
+  var t = 0
+  
    for(var i=0; i< cart.length; i++){
+     
      for (var item in cart[i]){
+       
        t+= cart[i][item]
      }
    }
