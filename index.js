@@ -52,7 +52,7 @@ function total() {
 
   for (let i = 0; i < cart.length; i++) {
     for (let item in cart[i]) {
-      tote.push(cart[i][item])
+      tote += cart[i][item]
     }
   }
   return tote;
