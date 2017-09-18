@@ -43,7 +43,7 @@ function viewCart() {
 
 function total() {
   tote = []
-  
+
   for (let i = 0; i < cart.length; i++) {
     tote.push(cart[i])
   }
@@ -51,7 +51,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+
 }
 
 function placeOrder(cardNumber) {
