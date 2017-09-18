@@ -34,9 +34,9 @@ function viewCart() {
       var price = [];
 
       for (i in cart) {
-        
+
         var price = cart[i];
-        
+
         for (var j in price) {
           price.push(j + "at $" + price[j]);
         }
