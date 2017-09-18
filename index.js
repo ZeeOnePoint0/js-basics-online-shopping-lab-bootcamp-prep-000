@@ -60,7 +60,7 @@ function removeFromCart(item) {
 
   var itemInCart = false
 
-  for (let var i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
       itemInCart = true;
       cart.splice(i, 1);
