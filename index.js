@@ -31,13 +31,18 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
   } else {
-    var items = []
-    for (let i = 0; i < cart.length; i++) {
-      for (var item in cart[i]) {
-        items.push(item + " at $" + cart[i][item])
+      var price = [];
+
+      for (i in cart) {
+        
+        var price = cart[i];
+        
+        for (var j in price) {
+          price.push(j + "at $" + price[j]);
+        }
       }
-    }
-    console.log("In your cart, you have " + items.join(", ") + ".");
+    var vCart = price.join(", ");
+    console.log("In your cart, you have" + vCart + ".");
   }
 }
 
