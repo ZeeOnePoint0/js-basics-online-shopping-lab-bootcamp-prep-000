@@ -42,11 +42,16 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  tote = []
+  
+  for (let i = 0; i < cart.length; i++) {
+    tote.push(cart[i])
+  }
+  return cart[i][item];
 }
 
 function removeFromCart(item) {
-  var inCart
+  
 }
 
 function placeOrder(cardNumber) {
