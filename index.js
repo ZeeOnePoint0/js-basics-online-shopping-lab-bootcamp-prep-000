@@ -48,14 +48,13 @@ function viewCart() {
 }
 
 function total() {
-  var tote = []
+  var amount = [];
 
-  for (let i = 0; i < cart.length; i < l; i++) {
+  for (let i = 0; l = cart.length; i < l; i++) {
     for (let item in cart[i]) {
-      tote += cart[i][item]
+      amount += cart[i][item];
     }
   }
-  return tote;
 }
 
 function removeFromCart(item) {
