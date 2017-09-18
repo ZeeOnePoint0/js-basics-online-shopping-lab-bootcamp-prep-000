@@ -48,7 +48,7 @@ function viewCart() {
 }
 
 function total() {
-  var amount = [];
+  var amount = 0;
 
   for (let i = 0; l = cart.length; i < l; i++) {
     for (let item in cart[i]) {
