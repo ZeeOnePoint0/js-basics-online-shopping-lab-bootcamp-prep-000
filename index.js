@@ -20,9 +20,9 @@ function addToCart(item) {
   cart.push(item + " has been added to your cart");
 
   return cart;
-  
 
-  
+
+
 }
 
 function viewCart() {
