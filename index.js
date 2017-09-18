@@ -76,7 +76,7 @@ function placeOrder(cardNumber) {
   if (!cardNumber) {
     console.log("Sorry, we do not have a credit card on file for you.")
   } else {
-    console.log("Your total cost is $" + cardNumber + ".");
+    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
     cart = [];
   }
 }
